@@ -1,0 +1,215 @@
+:root{
+    --dark-red: #885053;
+    --red: #FE5F55;
+    --blue: #6699FF;
+    --mid-green: #94C9A9;
+    --lime: #C6ECAE;
+    --dark-blue: #42497f;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+}
+p{
+    margin: 20px 80px;
+    text-align: justify;
+}
+hr.rounded {
+    border-top: 5px solid #bbb;
+    border-radius: 5px;
+}
+/*Estilo do header geral*/
+.header{
+    overflow: hidden;
+    background-color: var(--blue);
+    padding: 20px 10px;
+}
+/*Estilo dos links*/
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+/*Estilo do Logo*/
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+/*Estilo do hover*/
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*Estilo do link ativado*/
+.header a.active {
+    background-color: #FFF;
+    color: black;
+}
+/*Alinhamento dos links*/
+.header-right {
+    float: right;
+}
+.icon{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.mySlides{
+    width: 100%;
+    max-width: 900px;
+    display: none;
+    margin: 0 auto;
+}
+.slideshow{
+    position: relative;
+    top: 10px;
+}
+.slide-button{
+    position: absolute;
+    display: inline-block;
+
+    color: #000;
+    background-color: var(--blue);
+    border: none;
+    overflow: hidden;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+}
+.slide-button:hover{
+    background-color: #ccc;
+}
+.display-left{
+    top: 50%;
+    left: 0%;
+    margin-left: 10px;
+    transform: translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%); 
+}
+.display-right{
+    top: 50%;
+    right: 0%;
+    margin-right: 10px;
+    transform: translate(0%,50%);
+    -ms-transform:translate(-0%,-50%);   
+}
+.left{
+    float: left;
+    margin-left: 30px;
+}
+.right{
+    float: right;
+    margin-right: 30px;
+}
+.footer{
+    background-color: var(--dark-blue);
+    height: 300px;
+    width: 100%;
+    color: white;
+    margin-top: 50px;
+    padding: 0 auto;
+}
+.footer ul{
+    height: 200px;
+    width: 200px;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer li{
+    width: 100%;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #ccc;
+    background-color: #aaa;
+    border-radius: 1px;
+    text-decoration: none;
+}
+.cart{
+    height: 600px;
+    width: 50%;
+    border: 10px solid black;
+    margin: 0 auto;
+}
+.profile{
+    height: 600px;
+    width: 50%;
+    border: 10px solid black;
+    margin: 0 auto;
+}
+#center-circle{
+    background-color: inherit;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: -50px;
+    text-align: center;
+    display: flex;
+}
+#center-circle img{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+#about{
+    margin: 20px 100px;
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+}
+#about h2{
+    text-align: center;
+}
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+}
+#scroll-button:hover {
+    background-color: #555;
+}
+/* Responsividade do tamanho da tela: No mobile, os links se empilham*/
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    p{
+        margin: 20px;
+    }
+    #about{
+        margin: 20px 20px;
+    }
+}
