@@ -133,12 +133,16 @@ hr.rounded {
 .footer li{
     width: 100%;
 }
+.footer li .active{
+    background-color: #fff;
+    color: black;
+}
 .footer a{
     color: white;
     text-decoration: none;
 }
 .footer a:hover{
-    color: #ccc;
+    color: black;
     background-color: #aaa;
     border-radius: 1px;
     text-decoration: none;
