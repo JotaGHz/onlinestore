@@ -15,7 +15,7 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    color:black;
+    color: black;
 }
 p{
     margin: 20px 80px;
@@ -24,6 +24,26 @@ p{
 hr.rounded {
     border-top: 5px solid #bbb;
     border-radius: 5px;
+}
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input[type=submit]{
+    width: 40%;
+    background-color: var(--dark-blue);
+    color: white;
+    border-bottom: none;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+}
+input:focus{
+    outline: none;
 }
 /*Estilo do header geral*/
 .header{
@@ -71,6 +91,7 @@ hr.rounded {
     max-width: 900px;
     display: none;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .slideshow{
     position: relative;
@@ -105,6 +126,35 @@ hr.rounded {
     transform: translate(0%,50%);
     -ms-transform:translate(-0%,-50%);   
 }
+.product-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+
+    padding: 2%;
+    flex: 1 21%;
+}
+.product-img img{
+    max-width: 100%;
+}
+.product-info{
+    margin-top: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .product{
+        flex: 1 46%;
+    }
+}
+.center{
+    text-align: center;
+}
 .left{
     float: left;
     margin-left: 30px;
@@ -133,38 +183,61 @@ hr.rounded {
 .footer li{
     width: 100%;
 }
-<<<<<<< HEAD
-=======
 .footer li .active{
     background-color: #fff;
     color: black;
 }
->>>>>>> 4cb7ff93e84fb9312083e76574ebf8d5c6ac93ce
 .footer a{
     color: white;
     text-decoration: none;
 }
 .footer a:hover{
-<<<<<<< HEAD
-    color: #ccc;
-=======
     color: black;
->>>>>>> 4cb7ff93e84fb9312083e76574ebf8d5c6ac93ce
     background-color: #aaa;
     border-radius: 1px;
     text-decoration: none;
 }
 .cart{
-    height: 600px;
-    width: 50%;
-    border: 10px solid black;
+    width: 80%;
+    margin: 30px auto;
+}
+.cart-product{
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cart-product-img{
+    height: 100%;
     margin: 0 auto;
 }
+.cart-product-img img{
+    height: 80px;
+    aspect-ratio: 1;
+}
+.cart-product-info{
+    width: 80%;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.cart-product-details{
+    width: 20%;
+}
+
 .profile{
-    height: 600px;
+    height: 400px;
     width: 50%;
-    border: 10px solid black;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 5%;
+    text-align: center;
+}
+.small{
+    width: 150px;
 }
 #center-circle{
     background-color: inherit;
