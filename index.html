@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+    
     <head>
         <title>Loja</title>
         <meta charset="utf-8">
@@ -7,19 +9,41 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     </head>
+
     <body>
+
         <header class="header">
-            <a href="index.html" class="logo">NossoLogo</a>
+            
+            <a href="index.html" class="logo">
+            
+                <div id="center-circle">
+                    <img src="./img/logo.png">
+                </div>
+            
+            </a>
+            
+            <div class="search-box">
+                
+                <input class="search-txt" type="search" name="" placeholder="Type to search">
+                
+                <a class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            
+            </div>
+            
             <div class="header-right">
                 <a class="active" href="#home">Home</a>
                 <a href="#contact">Contato</a>
                 <a href="#about">Sobre</a>
                 <a href="cart.html"><img class="icon" src="./img/cart.png"></a>
                 <a href="profile.html"><img class="icon" src="./img/user.png"></a>
+
             </div>
         </header>
+
         <div class="slideshow">
             <img class="mySlides" src="./img/boat.jpg">
             <img class="mySlides" src="./img/pine.jpg">
@@ -29,94 +53,142 @@
             <button class="slide-button display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="slide-button display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
+
         <script src="slideshow.js"></script>
         <button onclick="topFunction()" id="scroll-button"><img class="icon" src="./img/uparrow.png"></button>
         
-        <hr class="rounded">
         
-        <h1 class="center">Produtos</h1>
+        <h1 class="center">Destaques</h1>
 
         <div class="product-box">
+            
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/sdaASociedadeDoAnel.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>O Senhor dos Anéis: A Sociedade do Anel</h5>
+                    <h6>R$ 39,90</h6>
+                    <p>
+                        O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, 
+                        foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores 
+                        e se tornando o padrão de referência para todas as outras obras do gênero até hoje.
+                        A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas 
+                        mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente 
+                        quanto o mundo real.
+                    </p>
                 </div>
             </div>
+            
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/sdaAsDuasTorres.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>O Senhor dos Anéis: As duas torres</h5>
+                    <h6>R$ 39,90</h6>
+                    <p>
+                        O segundo volume de O Senhor dos Anéis, mais importante épico de fantasia moderno, 
+                        narra os caminhos separados seguidos pelos membros da Sociedade do Anel em sua luta
+                        para deter Sauron, o Senhor Sombrio da terra de Mordor, e destruir o Um Anel, 
+                        no qual está contida a maior parte do poder do tirano demoníaco imaginado por 
+                        J.R.R. Tolkien.
+                    </p>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/sdaORetornoDoRei.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>O Senhor dos Anéis: O retorno do rei</h5>
+                    <h6>R$ 32,90</h6>
+                    <p>
+                        A guerra entre os Povos Livres da Terra-média e Sauron, o Senhor Sombrio da terra de Mordor, 
+                        chega a seu clímax neste terceiro volume do romance O Senhor dos Anéis. As batalhas grandiosas 
+                        que estão prestes a acontecer, no entanto, são apenas o pano de fundo para o verdadeiro drama: 
+                        a missão quase suicida dos hobbits Frodo e Sam, que tentam destruir o Um Anel, fonte do poder de 
+                        Sauron, infiltrando-se no coração do território do Inimigo.
+                    </p>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/hpPedraFilosofal.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>Harry Potter e a Pedra Filosofal</h5>
+                    <h6>R$ 21,90</h6>
+                    <p>
+                        Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um 
+                        poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para 
+                        a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. 
+                        Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, 
+                        herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado 
+                        como um estorvo.
+                    </p>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/hpCamaraSecreta.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>Harry Potter e a Câmara Secreta</h5>
+                    <h6>R$ 22,90</h6>
+                    <p>
+                        Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. 
+                        Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não 
+                        se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na 
+                        Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas. Novos colegas, novos professores, 
+                        muitas e boas descobertas e um grande e perigosos desafio. 
+                    </p>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/hpPrisioneiroAzkaban.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>Harry Potter e o Prisioneiro de Azkaban</h5>
+                    <h6>R$ 25,90</h6>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/hpCaliceFogo.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>Harry Potter e o Cálice de Fogo</h5>
+                    <h6>R$ 32,90</h6>
                 </div>
             </div>
+
             <div class="product">
                 <div class="product-img">
-                    <img src="./img/thefatoftheland.jpg">
+                    <img src="./img/bookCover/hpOrdemFenix.png">
                 </div>
                 <div class="product-info">
-                    <h5>The Fat of The Land</h5>
-                    <h6>R$ 50,00</h6>
+                    <h5>Harry Potter e a Ordem da Fênix</h5>
+                    <h6>R$ 47,90</h6>
                 </div>
             </div>
             
         </div>
-        <hr class="rounded">
+        
         <div id="about">
+
             <h2>Sobre</h2>
+            
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla atque sunt ad, temporibus impedit! Animi quisquam, corporis dolor libero, atque, asperiores accusamus corrupti molestias soluta quasi perspiciatis sequi expedita.
+                A maior livraria online desde 1999.
             </p>
+
         </div>
         <script src="topbutton.js"></script>
 
@@ -130,7 +202,7 @@
             
             <div class="left">
                 <ul>
-                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#contact">Contato</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="cart.html"><img class="icon" src="./img/cart.png"></a></li>
