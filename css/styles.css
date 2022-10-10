@@ -6,16 +6,13 @@
     --lime: #C6ECAE;
     --dark-blue: #42497f;
 }
-
+*{
+    margin: -1;
+    padding: -1;
+}
 html{
     scroll-behavior: smooth;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
     color: black;
