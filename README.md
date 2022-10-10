@@ -39,10 +39,9 @@
 
     d. Os administradorees podem alterar dados e estoque de livros, e alterar o catálogo. 
 
-    e. O diferencial de nossa loja online
+    e. O diferencial de nossa loja é uma degustação de cada livro. Na página web de cada livro, haverá áudios narrando o começo da obra, gravados pelo autor ou por alguma personalidade notória relacionada aos temas do livro (exemplo: um livro que já foi adaptado aos cinemas pode ser narrado pelo seu autor ou pelo ator que interpretou o personagem principal).
 
-    f.
-
+    f. O site será responsivo para desktops e mobiles. Na questão de acessibilidade, todas as imagens terão textos "alt" e haverá uma opção de aumentar o tamanho dos textos.
 
 3. Comments About the Code
 
@@ -55,4 +54,3 @@
 7. Problems
 
 8. Comments
-
