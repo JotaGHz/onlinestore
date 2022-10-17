@@ -35,12 +35,11 @@ input{
 }
 
 input[type=submit]{
-    width: 40%;
+    min-width: 80px;
     background-color: var(--dark-blue);
     color: white;
     border-bottom: none;
 }
-
 input[type=submit]:hover{
     cursor: pointer;
     background-color: var(--blue);
@@ -107,7 +106,10 @@ input:focus{
 .icon.trash:hover {
     color: var(--red);
 }
-
+.profile{
+    display: flex;
+    justify-content: center;
+}
 .mySlides{
     width: 100%;
     display: none;
@@ -283,14 +285,19 @@ input:focus{
     height: 400px;
     width: 50%;
     margin: 10px auto;
-    padding: 5%;
+    padding: 0 5%;
     text-align: center;
 }
 
 .small{
     width: 150px;
 }
-
+.center{
+    margin: 0 auto;
+}
+.signup, .login{
+    margin: 0 30px;
+}
 .search-box{
     display: inline-block;
     background-color: var(--blue);
@@ -345,6 +352,9 @@ input:focus{
 }
 .book-details-info{
     color: white;
+}
+.login input, .signup input{
+    min-width: 100px;
 }
 #center-circle{
     background-color: inherit;
