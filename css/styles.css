@@ -331,7 +331,21 @@ input:focus{
  line-height: 40px;
  width: 0px;
 }
-
+.book-details{
+    width: 70%;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    border: 4px solid black;
+    margin: 30px auto;
+}
+.book-cover img{
+    width: 50%;
+    padding: 40px;
+}
+.book-details-info{
+    color: white;
+}
 #center-circle{
     background-color: inherit;
     border-radius: 100%;
