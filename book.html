@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Meu Perfil</title>
+        <title>Loja</title>
 
         <meta name="description" content="Varejo de Livros Online">
 		<meta name="keywords" content="Livros, Livraria, Bookstore, Suspense, Terror, Fantasia, Ficção Cientifica, Autoajuda, Filosofia, Literatura">
@@ -14,11 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    
     </head>
-    
     <body>
-    
         <header class="header">
             
             <a href="index.html" class="logo">
@@ -44,46 +41,23 @@
                 <a href="#contact">Contato</a>
                 <a href="#about">Sobre</a>
                 <a href="cart.html"><img class="icon" src="./img/cart.png"></a>
-                <a class="active" href="profile.html"><img class="icon" src="./img/user.png"></a>
+                <a href="profile.html"><img class="icon" src="./img/user.png"></a>
 
             </div>
         </header>
         <button onclick="topFunction()" id="scroll-button"><img class="icon" src="./img/uparrow.png"></button>
-        
-        <div class="center">
-            <img class="small"src="./img/user.png">
-        </div>
-        
-        <div class="profile">
-            <div class="signup">
-
-                <h2>Sign Up</h2>
-                <form action="/action_page.php">
-                    <label for="password">Nome:</label><br>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="mail" name="email"><br><br>
-                    <label for="password">Senha:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    
-                    <input type="submit" value="Criar"><br><br>
-                </form>
-                
-            </div>
-            <div class="login">
-
-                <h2>Login</h2>
-                <form action="/action_page.php">
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="mail" name="email"><br><br>
-                    <label for="password">Senha:</label><br>
-                    <input type="password" id="password" name="password"><br><br>
-                    
-                    <input type="submit" value="Entrar"><br><br>
-                </form>
-            </div>
-        </div>
         <script src="topbutton.js"></script>
+
+        <div class="book-details">
+            <div class="book-cover">
+                <img src="./img/bookCover/hpCaliceFogo.png">
+            </div>
+            <div class="book-details-info">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam doloremque a rem reprehenderit, fugit non enim iste dolorum atque autem officiis, veritatis voluptates incidunt. Inventore facilis tempora doloremque perferendis tempore!
+                </p>
+            </div>
+        </div>
 
         <footer class="footer">
             
@@ -98,8 +72,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#contact">Contato</a></li>
                     <li><a href="index.html#about">Sobre</a></li>
-                    <li><a href="cart.html"><img class="icon" src="./img/cart.png"></a></li>
-                    <li><a class="active" href="profile.html"><img class="icon" src="./img/user.png"></a></li>
+                    <li><a class="active" href="cart.html"><img class="icon" src="./img/cart.png"></a></li>
+                    <li><a href="profile.html"><img class="icon" src="./img/user.png"></a></li>
                 </ul>
             </div>
             <div class="right">
